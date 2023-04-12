@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+    /* You can add global styles to this file, and also import other style files */
+    .owl-nav {
+        position: absolute;
+        top: -30%;
+        right: 70px;
+    }
+
+    .owl-prev {
+        background-color: #000824 !important;
+        font-size: 30px !important;
+        color: #7296b8 !important;
+    }
+
+    .owl-next {
+        background-color: #000824 !important;
+        font-size: 30px !important;
+        color: #7296b8 !important;
+    }
+
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 80% !important;
+        margin: 0 auto;
+    }
+@media screen and (max-width:426px) {
+    .owl-nav {
+        position: absolute;
+        top: -40%;
+        right: 70px;
+    }
+}

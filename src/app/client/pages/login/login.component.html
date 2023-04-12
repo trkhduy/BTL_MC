@@ -1,0 +1,67 @@
+<app-header></app-header>
+<div class="container">
+    <div class="form-sign">
+        <div class="title-name">
+            <div class="login col-lg-6">
+                <p href="">Login</p>
+            </div>
+            <div class="register col-lg-6">
+                <a routerLink="/register">Register</a>
+            </div>
+        </div>
+        <form action="">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3 col-md-12 col-sm-12 col-12">
+                        <div class="alert alert-danger" role="alert" *ngIf="error">
+                            <strong><i class="fa-solid fa-triangle-exclamation"></i> {{error}} <br> Invalid username or
+                                password (Ref: EC4)'</strong>
+                        </div>
+
+                        <div class="account_form">
+                            <h3>Login</h3>
+                            <form id="myform" [formGroup]="formlogin" (ngSubmit)="onSubmit()">
+                                <div class="default-form-box"><label> Email <span>*</span></label> <input type="email"
+                                        id="email" name="email" class="form-control" formControlName="email">
+                                    <div *ngIf="f.email.invalid && (f.email.dirty||f.email.touched)">
+                                        <div *ngIf="f.email.errors?.['required']">
+                                            <small id="helpId" class="text-danger">Please enter your email
+                                                address</small>
+                                        </div>
+                                        <div *ngIf="f.email.errors?.['email']">
+                                            <small id="helpId" class="text-danger">Please enter your email
+                                                address</small>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="default-form-box"><label for="password">Password</label> <input
+                                        type="password" id="password" name="password" class="form-control"
+                                        formControlName="password">
+                                    <div *ngIf="f.password.invalid && (f.password.dirty||f.password.touched)">
+                                        <div *ngIf="f.password.errors?.['required']">
+                                            <small id="helpId" class="text-danger">Please enter your password</small>
+                                        </div>
+                                        <div *ngIf="f.password.errors?.['minlength']">
+                                            <small id="helpId" class="text-danger">Please enter your password</small>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div class="login_submit"><button class="">login</button>
+                                </div>
+                                <div class="remember_area"><label class="checkbox-default"><input type="checkbox">
+                                        <span>Remember
+                                            me</span></label></div> <a href="/register" class="">Create Your
+                                    Account?</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<app-footer></app-footer>

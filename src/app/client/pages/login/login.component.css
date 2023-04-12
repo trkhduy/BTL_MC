@@ -1,0 +1,85 @@
+.form-sign {
+    padding: 30px;
+}
+
+.title-name {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-bottom: gray 1px solid;
+}
+
+.login,
+.register {
+    text-align: center;
+    padding: 15px 15px 20px 15px;
+    position: relative;
+}
+
+.login p {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 750;
+    color: #00285e;
+    cursor: default
+}
+
+.login p::after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    background-color: #032a66;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.register a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 750;
+    color: #00285e;
+    cursor: pointer;
+}
+
+.account_form {
+    /* border: 2px solid black; */
+    padding: 30px 50px;
+    margin: 50px 0px 80px 0;
+    box-shadow: 0 0 20px 2px #98c5e9;
+}
+
+.account_form h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.default-form-box label {
+    font-weight: 700;
+
+}
+
+.login_submit {
+    margin: 15px 0px;
+}
+
+.login_submit button {
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: black;
+}
+
+.error {
+    margin-top: 5px;
+    color: red;
+    border-radius: 3px;
+    border: 1px solid red;
+    padding: 0px 5px;
+}
+
+.alert-danger {
+    margin: 20px 0 !important;
+}

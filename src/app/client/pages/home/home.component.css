@@ -1,0 +1,337 @@
+.banner {
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 150px;
+    left: 15%;
+}
+
+.banner-text p {
+    font: 900 70px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    color: #f6f6f8 !important;
+    line-height: 70px;
+}
+
+.banner-text button {
+    padding: 17px;
+    border-radius: 0;
+    color: #00285e;
+    font: 700 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    background-color: #ffd600;
+}
+
+.jersey-MChome {
+    background-color: #000824;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.jersey-MChome-left {
+    margin-top: 90px;
+    /* padding: 80px 50px 20px 50px; */
+    /* width: 100%;
+    height: 100%; */
+}
+
+.text-jersey {
+    padding: 100px 100px 20px 100px;
+    margin-top: 100px;
+
+}
+
+/* .img-jersey {
+    width: 100%;
+} */
+
+.text-jersey a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.card-body {
+    line-height: 15px;
+}
+
+.card-body a {
+    color: #00285e;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.card-text {
+    color: #999;
+    font-weight: 700;
+}
+
+.home-kit {
+    position: relative;
+}
+
+.home-kit button {
+    padding: 17px;
+    border-radius: 0;
+    color: #00285e;
+    font: 700 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    background-color: #ffd600 !important;
+    position: absolute;
+    right: 5%;
+    bottom: 25px;
+}
+
+.collection h4 {
+    font: 900 20px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #00285e !important;
+}
+
+.collection-left {
+    position: relative;
+}
+
+.collection-left-text {
+    font: 900 60px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: .86;
+    color: #f6f6f8 !important;
+    position: absolute;
+    bottom: 18px;
+    left: 4.5%;
+}
+
+.collection-right {
+    position: relative;
+}
+
+.collection-right-text {
+    font: 900 60px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: .86;
+    text-transform: uppercase;
+    color: #f6f6f8 !important;
+    position: absolute;
+    bottom: 18px;
+    left: 4.5%;
+}
+
+.our-champions {
+    background-color: #000824;
+    padding-top: 50px;
+    /* height: 700px; */
+}
+
+.our-champions-head {
+    display: flex;
+}
+
+.our-champions-head h4:first-child {
+    color: white;
+    font: 900 30px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.13;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 0;
+    padding-right: 5px;
+}
+
+.our-champions-head h4:last-child {
+    color: #98c5e9 !important;
+    font: 900 30px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.13;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 0;
+    padding-left: 5px;
+}
+
+.our-champions-button button {
+    padding: 17px;
+    border-radius: 0;
+    font: 750 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.25;
+    text-transform: uppercase;
+    background-color: #00285e;
+    color: #f6f6f8;
+}
+
+.player {
+    max-width: 330px;
+    /* max-height: 400px; */
+    margin-right: 25px;
+    position: relative;
+    border: 1px solid #6788a2;
+    padding: 60px 0px 0 0px;
+}
+
+.player-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.player-text p:first-child {
+
+    font: 500 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.25;
+    color: #98c5e9;
+}
+
+.player-text p:last-child {
+    font: 400 14px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 0.5;
+    opacity: .5;
+    color: #fff;
+}
+
+/* .shirt-number {
+    position: absolute;
+    top: 0;
+}
+
+.shirt-number p {
+    padding-top: 60px;
+    left: 27px;
+    font: 700 140px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    top: 0;
+    margin: 0;
+    opacity: .4;
+    color: #98c5e9;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #98c5e9;
+} */
+.player-tile__number {
+    padding-top: 60px;
+    left: 25px;
+    font: 700 100px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+}
+
+.player-tile__number {
+    top: 0;
+    margin: 0;
+    opacity: .5;
+    color: #98c5e9;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #98c5e9;
+}
+
+.complete h4 {
+    font: 900 20px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #00285e !important;
+}
+
+.MC-Woman h4 {
+    font: 900 20px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #00285e !important;
+}
+
+.img-MC-Woman {
+    position: relative;
+}
+
+.MC-Woman-text {
+    font: 900 70px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: .86;
+    color: #f6f6f8 !important;
+    position: absolute;
+    bottom: 18px;
+    left: 2.5%;
+}
+
+.discover h4 {
+    font: 900 20px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #00285e !important;
+}
+
+@media screen and (max-width:768px) {
+    .banner-text {
+        position: absolute;
+        top: 120px;
+        left: 13%;
+    }
+
+    .banner-text p {
+        font: 900 50px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+        color: #f6f6f8 !important;
+        line-height: 70px;
+    }
+
+    .collection-left-text {
+        font: 900 40px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+        letter-spacing: normal;
+        line-height: .86;
+        color: #f6f6f8 !important;
+        position: absolute;
+        bottom: 18px;
+        left: 4.5%;
+    }
+
+    .collection-right-text {
+        font: 900 40px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+        letter-spacing: normal;
+        line-height: .86;
+        text-transform: uppercase;
+        color: #f6f6f8 !important;
+        position: absolute;
+        bottom: 18px;
+        left: 4.5%;
+    }
+
+    .MC-Woman-text {
+        font: 900 50px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+        letter-spacing: normal;
+        line-height: .86;
+        color: #f6f6f8 !important;
+        position: absolute;
+        bottom: 18px;
+        left: 2.5%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .banner-text p {
+        font: 900 40px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+        color: #f6f6f8 !important;
+        line-height: 70px;
+    }
+    .banner-text button {
+        padding: 12px;
+        border-radius: 0;
+        color: #00285e;
+        font: 700 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+        background-color: #ffd600;
+    }
+    .banner-text {
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+}

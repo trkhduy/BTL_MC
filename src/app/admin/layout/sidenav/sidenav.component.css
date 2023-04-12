@@ -1,0 +1,40 @@
+a {
+    color: #111 !important;
+    text-decoration: none;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+/* .dashboards{
+    border-bottom: 1px solid #111;
+} */
+
+.dashboards ul {
+    padding-left: 0;
+}
+
+.dashboards ul li {
+    list-style: none;
+    padding-left: 20px;
+    cursor: pointer;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.dashboards ul:hover li {
+    background: #e0f3ff;
+    color: #3f6ad8 !important;
+
+}
+
+.dashboards ul:hover li a {
+    color: #3f6ad8 !important;
+}
+
+.saved {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}

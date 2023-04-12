@@ -1,0 +1,149 @@
+<div class="nav-header">
+    <div class="container">
+        <div class="nav-header-top">
+            <div class="nav-header-left">
+                <a href="">MANCITY</a>
+                <a href="">TICKETS</a>
+                <a href="" class="nav-header-left-main-a" routerLink="/products">SHOP</a>
+                <a href="">CITYZENS</a>
+            </div>
+            <div class="nav-header-right">
+                <a href="">Check Order</a>
+                <a href="">Help</a>
+                <a href="">INT / £</a>
+                <div *ngIf="!user">
+                    <a routerLink="/login"><i class="fa-solid fa-circle-user"></i></a>
+                    <span>Account</span>
+                </div>
+                <div *ngIf="user" class="user">
+                    <img src="https://i.pinimg.com/474x/db/fb/36/dbfb369ad0c7688ddf7db1bf31998b87.jpg" width="20px"
+                        alt="" style="border-radius: 10px;">
+                    <span style="font-weight: 500; margin-left: 7px; text-transform: uppercase;">{{user.name}}</span>
+                    <div class="logout">
+                        <p (click)="logout()">Log out</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="nav-main">
+    <div class="container">
+        <div class="row haha">
+            <div class="col-lg-6">
+                <div class="nav-main-left">
+                    <div class="row haha">
+                        <div class="logo col-lg-2">
+                            <a href="" routerLink="/">
+                                <img src="https://shop.mancity.com/on/demandware.static/Sites-MAN-Site/-/default/dwb930e646/images/logo.svg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="nav-menu col-lg-10">
+                            <ul class="">
+                                <li><a routerLink="/products">All Products</a></li>
+                                <li *ngFor="let item of listCate"><a href=""
+                                        routerLink="/filter/{{item.id}}">{{item.name}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="nav-main-right">
+                    <div class="search">
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div class="cart">
+                        <a routerLink="/cart"><i class="fa-solid fa-bag-shopping"></i></a>
+                        <a href="" class="header-widget">
+                            <p><small>{{length}}</small></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- 768px -->
+<div class="nav-main-768">
+    <div class="container-md">
+        <div class="row d-flex justify-content-between align-items-center">
+            <div class="col col-md-4 col-xs-4 header-left-768">
+                <i class="fa-solid fa-bars" (click)="onNav()"></i>
+                <!-- nav-on -->
+                <div class="nav-768" id="Nav">
+                    <div class="nav-header-768">
+
+                        <div class="nav-header-top-768">
+                            <div class="nav-header-left-768">
+                                <a href="">MANCITY</a>
+                                <a href="">TICKETS</a>
+                                <a href="" class="nav-header-left-main-a" routerLink="/products">SHOP</a>
+                                <a href="">CITYZENS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-middle-768">
+                        <div class="user-768">
+                            <div *ngIf="!user" class="d-flex">
+                                <a><i class="fa-solid fa-circle-user"></i></a>
+                                <span>Account</span>
+                            </div>
+                            <div *ngIf="user" class="user d-flex justify-content-between">
+                                <img src="https://i.pinimg.com/474x/db/fb/36/dbfb369ad0c7688ddf7db1bf31998b87.jpg"
+                                    width="20px" alt="" style="border-radius: 10px;">
+                                <span style="font-weight: 500; margin-left: 7px;">{{user.name}}</span>
+                                <!-- <div class="logout">
+                                    <p (click)="logout()">Log out</p>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="nav-header-right-768">
+                            <span>INT / £</span>
+                            <i class="fa-solid fa-xmark" (click)="offNav()"></i>
+                        </div>
+                    </div>
+                    <div class="nav-bottom-768">
+                        <ul>
+                            <li><a routerLink="/products">All Products</a></li>
+                            <li *ngFor="let item of listCate">
+                                <a routerLink="/filter/{{item.id}}">{{item.name}}</a>
+                            </li>
+                        </ul>
+                        <div class="login" *ngIf="!user">
+                            <a routerLink="/login" class="btn">LOGIN</a>
+                        </div>
+                        <div class="login" *ngIf="user">
+                            <a (click)="logout()" class="btn">LOGOUT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4 col-xs-4 logo-768">
+                <a routerLink="/">
+                    <img src="https://shop.mancity.com/on/demandware.static/Sites-MAN-Site/-/default/dwb930e646/images/logo.svg"
+                        alt="" width="50px" height="50px">
+                </a>
+            </div>
+            <div class="col col-md-4 col-xs-4 header-right-768">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a routerLink="/cart"><i class="fa-solid fa-bag-shopping" style="color:black;"></i></a>
+                <a href="" class="header-widget-768">
+                    <p><small>{{length}}</small></p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="slogan">
+    <a href=""> FREE EU SHIPPING WHEN YOU SPEND €100</a>
+</div>

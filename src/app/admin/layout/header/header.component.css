@@ -1,0 +1,471 @@
+.header {
+    background: #fafbfc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    z-index: 10;
+    transition: all .2s;
+}
+
+.header-shadow {
+    box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%), 0 0.9375rem 1.40625rem rgb(4 9 20 / 3%), 0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
+}
+
+.app-header-logo {
+    background: rgba(250, 251, 252, .1);
+    visibility: visible;
+    padding: 0 1.5rem;
+    height: 60px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    transition: width .2s;
+}
+
+.logo-src {
+    height: 23px;
+    width: 97px;
+    background: url(https://demo.dashboardpack.com/architectui-html-pro/assets/images/logo-inverse.png);
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.hamburger {
+    padding: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: .15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+
+.hamburger i {
+    color: #3f6ad8;
+    font-size: 24px;
+}
+
+.app-header-content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    padding: 0 1.5rem;
+    height: 60px;
+}
+
+.app-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper {
+    position: relative;
+    margin-right: 0.66667rem;
+}
+
+.search-wrapper .input-holder {
+    height: 42px;
+    width: 42px;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+
+.search-wrapper .input-holder .search-input {
+    width: 100%;
+    padding: 0 70px 0 20px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: 0 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    transform: translate(0, 60px);
+    transition: all .3s cubic-bezier(0, .105, .035, 1.57);
+    transition-delay: .3s;
+    font-size: .88rem;
+}
+
+.search-wrapper .input-holder .search-icon {
+    width: 42px;
+    height: 42px;
+    border: none;
+    padding: 0;
+    outline: none;
+    position: relative;
+    z-index: 2;
+    float: right;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    background: rgba(0, 0, 0, .06);
+    border-radius: 30px;
+}
+
+.search-icon span {
+    color: #3f6ad8;
+    font-size: 18px;
+}
+
+.close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.search-wrapper .close {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    cursor: pointer;
+    opacity: 0 !important;
+    transform: rotate(-180deg);
+    transition: all .2s cubic-bezier(.285, -.45, .935, .11);
+    transition-delay: .1s;
+}
+
+button.close {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    appearance: none;
+}
+
+.close i {
+    color: #3f6ad8;
+    font-size: 24px;
+}
+
+/* Active */
+.search-wrapper.active {
+    width: 330px,
+}
+
+.search-wrapper.active .input-holder {
+    width: 290px;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, .05);
+    transition: all .5s cubic-bezier(0, .105, .035, 1.57);
+}
+
+.search-wrapper.active .input-holder .search-input {
+    opacity: 1;
+    transform: translate(0, 11px);
+}
+
+.search-wrapper.active .input-holder .search-icon {
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    border-radius: 30px;
+}
+
+.search-wrapper.active .input-holder .search-icon span i {
+    transform: rotate(-270deg) !important;
+}
+
+.search-wrapper.active .close {
+    left: 300px;
+    opacity: .6 !important;
+    /* transform: rotate(45deg); */
+    transition: all .6s cubic-bezier(0, .105, .035, 1.57);
+    transition-delay: .5s;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.header-megamenu.nav>li>.nav-link {
+    color: #6c757d;
+    padding-left: 0.66667rem;
+    padding-right: 0.66667rem;
+}
+
+.nav-item .nav-link {
+    font-weight: 400;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    transition: background-color .3s ease, color .3s ease;
+    cursor: pointer;
+}
+
+.nav-link i:first-child {
+    margin-right: 7px;
+    color: #3f6ad8;
+    opacity: .45;
+}
+
+.nav-link:hover i:first-child {
+    opacity: 1;
+}
+
+.nav-link i:last-child {
+    margin-left: 7px;
+    font-size: 13px;
+}
+
+.header-megamenu.nav>li>.nav-link .badge-pill {
+    padding: 5px 7px;
+}
+
+.badge {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    min-width: 19px;
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #d92550;
+}
+
+.mr-2,
+.mx-2 {
+    margin-right: 0.5rem !important;
+}
+
+.ml-0,
+.mx-0 {
+    margin-left: 0 !important;
+}
+
+.badge-danger {
+    color: #fff;
+    background-color: #d92550;
+}
+
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 1.25rem
+}
+
+.search-wrapper.active+.header-megamenu {
+    opacity: 0;
+}
+
+
+.app-header-right {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+}
+
+.header-dots {
+    display: flex;
+    align-items: center;
+}
+
+.header-dots .icon-wrapper-alt {
+    margin: 0;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    overflow: visible;
+}
+
+.icon-wrapper {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.header-dots .icon-wrapper-alt .icon-wrapper-bg {
+    opacity: .1;
+    border-radius: 40px;
+}
+
+.icon-wrapper .icon-wrapper-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    opacity: .2;
+}
+
+
+
+.icon-wrapper i {
+    margin: 0 auto;
+    font-size: 1rem;
+    position: relative;
+    z-index: 5;
+}
+
+.bg-focus {
+    background-color: #444054 !important;
+}
+
+.language-icon {
+    border-radius: 30px;
+    position: relative;
+    z-index: 4;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.flag.large {
+    height: 32px;
+    width: 32px;
+    background-size: 32px 32px;
+}
+
+.DE {
+    background: url(https://demo.dashboardpack.com/architectui-html-pro/assets/fonts/DE.svg) no-repeat;
+}
+
+.flag {
+    height: 16px;
+    width: 16px;
+    background-size: 16px 16px;
+}
+
+.opacity-8 {
+    opacity: .8 !important;
+}
+
+.pr-0,
+.px-0 {
+    padding-right: 0 !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.header-btn-lg {
+    padding: 0 0 0 1.5rem;
+    margin-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-btn-lg::before {
+    position: absolute;
+    left: -1px;
+    top: 50%;
+    background: #dee2e6;
+    width: 1px;
+    height: 30px;
+    margin-top: -15px;
+    content: '';
+}
+
+.widget-content {
+    padding: 1rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.widget-content-wrapper {
+    display: flex;
+    flex: 1;
+    position: relative;
+    align-items: center;
+}
+
+.btn-group,
+.btn-group-vertical {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.image {
+    width: 42px;
+    height: 42px;
+}
+
+.ml-2,
+.mx-2 {
+    margin-left: 0.5rem !important;
+}
+
+.ml-3,
+.mx-3 {
+    margin-left: 1rem !important;
+}
+
+.widget-content .widget-content-left .widget-heading {
+    opacity: .8;
+    font-weight: 700;
+}
+
+.app-header .header-user-info>.widget-heading,
+.app-header .header-user-info>.widget-subheading {
+    white-space: nowrap;
+}
+
+.widget-content .widget-content-left .widget-subheading {
+    opacity: .5;
+}
+
+.app-header .header-user-info>.widget-subheading {
+    font-size: .8rem;
+}
+
+.btn-primary.btn-shadow {
+    box-shadow: 0 0.125rem 0.625rem rgb(63 106 216 / 40%), 0 0.0625rem 0.125rem rgb(63 106 216 / 50%);
+}
+
+.hamburger i:hover {
+    opacity: .7;
+    transition: 0.5s;
+}
+
+.btn-link {
+    text-decoration: none;
+}

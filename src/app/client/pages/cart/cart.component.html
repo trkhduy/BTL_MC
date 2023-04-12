@@ -1,0 +1,110 @@
+<app-header></app-header>
+<div class="container cart-page">
+    <div class="mb-3 p-3" style="background-color: #e8e8e8;">
+        ADDITIONAL CHARGES: Please note if you are ordering goods for delivery outside of the EU, your order may be
+        subject to additional import duties/taxes outside of our control. All orders are dispatched from our Netherlands
+        warehouse.
+    </div>
+    <div class="row flex">
+        <div class="col-lg-7">
+            <div class="your-bag">
+                <h1 class="font-type-title-h6 text-color-obsidian-blue mb-5 mb-lg-6">Your bag</h1>
+                <div class="cart-product-wrapper" *ngFor="let item of listCart">
+                    <div class="row ">
+                        <div class="col-lg-3">
+                            <img src="{{item.img}}" alt="" width="170px">
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="cart-product-right">
+                                <div class="name-close">
+                                    <p>{{item.name}}</p>
+                                    <i class="fa-solid fa-xmark" (click)="removePro(item.id)"></i>
+                                </div>
+                                <p class="description">Color: team light blue</p>
+                                <p class="description">Size: XL</p>
+                                <div class="price-quantity">
+                                    <p class="price">£ {{item.price}},00</p>
+                                    <div class="row buy mb-5 mt-5">
+                                        <div class="input ml-3">
+                                            <button class="btn-fake btn left_ip" (click)="mark('-',item.id)" id="tru"><i
+                                                    class="fa-solid fa-minus"></i></button>
+                                            <input type="text" value="{{item.quantity}}" id="quantity{{item.id}}">
+                                            <button class="btn-fake btn right_ip" (click)="mark('+',item.id)"
+                                                id="cong"><i class="fa-solid fa-plus"></i></button>
+                                        </div>
+                                        <div id="rateYo" class="star ml-5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 border-top-right mt-4">
+            <div class="all-promotion">
+                <div class="promotion">
+                    <a href="" class="promocode">Promo Code</a>
+                    <i class="fa-solid fa-angle-down" id="icon1" (click)="clickIcon()"></i>
+                </div>
+                <div class="input-code" id="code-ip">
+                    <input type="text" class="" id="ipcode" placeholder="Promo Code">
+                    <button class="btn btn-custom">SUBMIT</button>
+                </div>
+            </div>
+            <div class="total mt-4">
+                <h1 class="font-type-title-h6 text-color-obsidian-blue mb-5 mb-lg-6">TOTAL</h1>
+                <div class="cost">
+                    <p>Subtotal</p>
+                    <p>£ {{total}}</p>
+                </div>
+                <div class="cost" >
+                    <p>Shipping cost</p>
+                    <p id="shipcost">£ {{shipcost}}</p>
+                </div>
+                <div class="estimated">
+                    <p>Estimated cost:</p>
+                    <span>£ {{total + shipcost}}</span>
+                </div>
+                <div class="checkout mt-4">
+                    <button class="btn btn-custom1">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="useful">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="item-use">
+                    <img src="https://shop.mancity.com/on/demandware.static/-/Sites/default/dw75684fe6/contentslots/package.svg"
+                        alt="">
+                    <p>TRACKED SHIPPING</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="item-use">
+                    <img src="https://shop.mancity.com/on/demandware.static/-/Sites/default/dw463e5b7a/contentslots/truck.svg"
+                        alt="">
+                    <p>FREE SHIPPING OVER £90.00</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="item-use">
+                    <img src="https://shop.mancity.com/on/demandware.static/-/Sites/default/dwb66d8663/contentslots/turn-around.svg"
+                        alt="">
+                    <p>60 DAY RETURN POLICY</p>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="item-use">
+                    <img src="https://shop.mancity.com/on/demandware.static/-/Sites/default/dw1b640bc4/contentslots/exclusive.svg"
+                        alt="">
+                    <p>EXCLUSIVE PRODUCTS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

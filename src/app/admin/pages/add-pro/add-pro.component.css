@@ -1,0 +1,13 @@
+.form {
+    margin: 0 auto;
+}
+.category{
+    display: block;
+}
+.category_name{
+    padding: 5px;
+    text-transform: uppercase;
+}
+.mr-3{
+    margin-right: 20px;
+}

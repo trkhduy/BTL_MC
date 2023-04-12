@@ -1,0 +1,267 @@
+.cart-page {
+    font-family: Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #00285e;
+    text-align: left;
+    background-color: #fff;
+    padding: 100px 20px;
+}
+
+.font-type-title-h6 {
+    font: 800 30px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.13;
+    text-transform: uppercase;
+}
+
+.text-color-obsidian-blue {
+    color: #00285e !important;
+}
+
+.cart-product-right {
+    margin-left: 20px;
+    padding: 17px 0 30px;
+}
+
+.name-close {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-close p {
+    font: 500 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.25;
+
+}
+
+.name-close i {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 1.25;
+    color: #999999;
+}
+
+.description {
+    font: 400 14px Arial, Roboto, Helvetica Neue, Noto Sans, sans-serif, Segoe UI, -apple-system, BlinkMacSystemFont;
+    letter-spacing: normal;
+    line-height: 1.71;
+    color: #2f3133;
+    margin: 0;
+}
+
+.price-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-quantity .price {
+    font: 700 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.input button {
+    width: 45px;
+    padding: 7px;
+    border: none;
+    border: 1px solid #111;
+    border-radius: 0;
+    font-size: 17px;
+}
+
+.input input {
+    width: 45px;
+    padding: 7px;
+    border: none;
+    margin: 0 10px;
+    text-align: center;
+}
+
+
+.input .left_ip {
+    margin-right: -3px;
+}
+
+.input .right_ip {
+    margin-left: -3px;
+}
+
+.buy {
+    align-items: center;
+    text-align: right;
+}
+
+.border-top-right {
+    border-top: 1px solid #dee2e6;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.promotion {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.promotion .promocode {
+    text-decoration: none;
+    color: #00285e;
+    line-height: 3.25;
+}
+
+.promotion i {
+    cursor: pointer;
+    color: #00a1e0;
+    transition: 0.5s;
+}
+
+.input-code {
+    display: none;
+    transition: 0.5s;
+}
+
+.input-code input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid hsla(0, 0%, 60%, .3);
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #00285e;
+    outline: none;
+    transition: 0.4s;
+}
+
+.input-code input:focus {
+    margin-top: 25px;
+    border-color: #00b67b;
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(0 182 123 / 25%);
+    box-shadow: 0 0 0 0.2rem rgb(0 182 123 / 25%);
+}
+
+.btn-custom {
+    border-radius: 2px;
+    width: 100%;
+    padding: 13px;
+    background-color: #00285e;
+    color: #fff;
+    margin-top: 13px;
+    font: 700 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.display-promo {
+    display: none;
+}
+
+.click-icon {
+    transform: rotate(180deg);
+}
+
+.cost {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 400 16px Arial, Roboto, Helvetica Neue, Noto Sans, sans-serif, Segoe UI, -apple-system, BlinkMacSystemFont;
+    letter-spacing: normal;
+    line-height: 1.63;
+    color: #00285e;
+    margin-bottom: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+}
+
+.cost p:last-child {
+    font: 550 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.25;
+}
+
+.estimated {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #00285e;
+    padding-top: 20px;
+    font: 550 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.25;
+}
+
+.estimated span {
+    font: 620 26px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.15;
+}
+
+.btn-custom1 {
+    border-radius: 2px;
+    width: 100%;
+    padding: 17px;
+    background-color: #ffd600;
+    color: #00285e;
+    margin-top: 13px;
+    font: 700 16px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.25;
+    text-transform: uppercase;
+}
+
+.useful {
+    background-color: #f6f6f8;
+    padding: 100px 0;
+}
+
+.item-use {
+    padding: 0 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.item-use img {
+    margin: 0 0 20px;
+}
+
+.item-use p {
+    font: 700 14px Gotham Narrow, GothamNarrow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    letter-spacing: normal;
+    line-height: 1.14;
+    color: #00285e;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.display-promo {
+    display: block;
+
+}
+
+.change-icon {
+    transform: rotate(180deg);
+}

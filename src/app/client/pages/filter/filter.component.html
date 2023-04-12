@@ -1,0 +1,56 @@
+<app-header></app-header>
+<div class="banner">
+    <img src="https://scontent.fhan4-1.fna.fbcdn.net/v/t1.6435-9/126064081_10165086537510455_5846785462100267131_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_ohc=AA1NN8qTopsAX-S_nSh&_nc_ht=scontent.fhan4-1.fna&oh=00_AT_MAYyhfg1KLOlQIebtIAKg0KtknzSazGJ5TiKhbhfe2A&oe=62DFD59A"
+        alt="" class="card-img">
+</div>
+<div class="title-product">
+    <div class="container">
+        <p>{{listCate.name}}</p>
+    </div>
+</div>
+<!-- form-search -->
+<div class="search-item mt-5">
+    <div class="container">
+
+        <div class="filter">
+            <div class="select">
+                <select name="" id="filter1" (change)="filter()">
+                    <option value="">Gender</option>
+                    <option *ngFor="let item1 of listCate1" value="{{item1.id}}">
+                        <a>{{item1.name}}</a>
+                    </option>
+                </select>
+                <select name="" id="filter2" (change)="filter()">
+                    <option value="">Player</option>
+                    <option *ngFor="let item2 of listCate2" value="{{item2.id}}">
+                        <a>{{item2.name}}</a>
+                    </option>
+                </select>
+            </div>
+
+            <div class="search">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <input type="text" placeholder="Search" [(ngModel)]="keyword">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4" *ngFor="let item of listData | searchitem:keyword">
+                <div class="card">
+                    <a routerLink="/detail/{{item.id}}"><img class="card-img-top item" src="{{item.img}}"
+                            alt="Title"></a>
+                    <div class="card-body">
+                        <a routerLink="/detail/{{item.id}}">
+                            <p class="card-title">{{item.name}}</p>
+                        </a>
+                        <p class="card-text">£ {{item.price}},00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,33 @@
+<button class="btn btn-success mt-4 mb-4" [routerLink]="['/admin/addProduct']">Add-Product</button>
+<table class="table table-primary">
+    <thead>
+        <tr>
+            <th>ON</th>
+            <!--ordinal numbers -->
+            <th>Name</th>
+            <th>Price</th>
+            <th>image1</th>
+            <th>image2</th>
+            <th>image3</th>
+            <th>image4</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-light" *ngFor="let item of listPro">
+            <th>{{item.id}}</th>
+            <!--ordinal numbers -->
+            <th>{{item.name}}</th>
+            <th>{{item.price}}</th>
+            <th><img src="{{item.img}}" width="70px" alt=""></th>
+            <th><img src="{{item.img2}}" alt="" width="70px"></th>
+            <th><img src="{{item.img3}}" alt="" width="70px"></th>
+            <th><img src="{{item.img4}}" alt="" width="70px"></th>
+            <th><i class="fa-solid fa-pen-to-square text-success" style="cursor: pointer;"
+                    [routerLink]="['/admin/editProduct',item.id]"></i></th>
+            <th><i class="fa-solid fa-trash-can text-danger" style="cursor: pointer;" (click)="remove(item.id)"></i>
+            </th>
+        </tr>
+    </tbody>
+</table>

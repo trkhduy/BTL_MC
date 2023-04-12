@@ -1,0 +1,97 @@
+.title-product {
+    background-color: #000824;
+}
+
+.title-product p {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 850;
+}
+
+.item {
+    padding: 20px;
+    background-color: #f6f6f8;
+}
+
+.card {
+    border: none;
+}
+
+.card-body a,
+p {
+    text-decoration: none;
+    color: #00285e;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.filter {
+    display: flex;
+    background-color: #00285e;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.filter select {
+    background: #00285e;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.filter select option {
+    color: white;
+    font-weight: 500;
+}
+
+.search {
+    position: relative;
+    margin-right: 15px;
+}
+
+.search input {
+    border: none;
+    /* border-radius: 5px; */
+    height: 50px;
+    padding-left: 35px;
+}
+
+.search input::placeholder {
+    font-weight: 500;
+    color: #bfbdbc;
+}
+
+.search a {
+    position: absolute;
+    color: black;
+    left: 4%;
+    top: 13.7px;
+    font-size: 18px;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+}
+
+.select select:first-child {
+    margin-right: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .title-product p {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 850;
+    }
+}
+@media screen and (max-width:426px) {
+    .search input {
+        border: none;
+        /* border-radius: 5px; */
+        height: 50px;
+        padding-left: 35px;
+        width: 150px;
+    }
+}

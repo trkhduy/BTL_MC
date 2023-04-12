@@ -1,0 +1,395 @@
+<app-header></app-header>
+<div class="banner">
+    <img src="https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-MAN-Library/default/dw49afbc5f/images/2022_campaigns/hp_homekit-22-23/HOMEPAGE_HERO_BANNER_HomeKit_22-23_v1%20(2).jpg?sw=1900"
+        alt="" class="card-img">
+
+    <div class="banner-text">
+        <p>OUR 2022/23 <br> HOME KIT</p>
+        <button class="btn" routerLink="/products">SHOP NOW</button>
+    </div>
+</div>
+<div class="jersey-MChome">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="jersey-MChome-left">
+                    <div class="img-jersey">
+                        <a routerLink="/detail/{{data1.id}}">
+                            <img src="{{data1.img}}" alt="" class="card-img">
+                        </a>
+                    </div>
+                    <div class="text-jersey">
+                        <a routerLink="/detail/{{data2.id}}">
+                            <p> {{data1.name}} <br> £ {{data1.price}},00</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="row mt-5">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card">
+                            <a routerLink="/detail/{{data2.id}}">
+                                <img class="card-img-top" src="{{data2.img}}" alt="">
+                            </a>
+                            <div class="card-body">
+                                <a href="">
+                                    <p class="card-title">{{data2.name}}</p>
+                                </a>
+                                <p class="card-text">£ {{data2.price}},00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="card">
+                            <a routerLink="/detail/{{data3.id}}">
+                                <img class="card-img-top" src="{{data3.img}}" alt="">
+                            </a>
+                            <div class="card-body">
+                                <a href="">
+                                    <p class="card-title">{{data3.name}}</p>
+                                </a>
+                                <p class="card-text">£ {{data3.price}},00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-kit mt-4">
+                    <img src="https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-MAN-Library/default/dwdd032a27/images/2022_campaigns/hp_homekit-22-23/product-group_3200x1600_v2.jpg?sw=1900&sfrm=jpg"
+                        alt="" class="card-img">
+                    <button class="btn" routerLink="/filter/1">SHOP 2022/23 HOME KIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="collection mt-4">
+    <div class="container">
+        <h4 class="mb-2">NEW COLLECTION</h4>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="collection-left">
+                    <a href="" routerLink="/filter/2">
+                        <img src="https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-MAN-Library/default/dw675ab36f/images/2022_campaigns/hp_homekit-22-23/Content_Square_Banner_PlayerKits_v2.jpg?sw=950"
+                            alt="" class="card-img">
+                    </a>
+                    <div class="collection-left-text">
+                        <span>SHOP BY</span>
+                        <br>
+                        <span>PLAYER</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="collection-right">
+                    <a href="">
+                        <img src="https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-MAN-Library/default/dwbbd7f1b8/images/2022_campaigns/buy1get1/HOMEPAGE_Content_Square_Banner_WelcomeHaaland_v1%20(1).jpg?sw=950"
+                            alt="" class="card-img">
+                    </a>
+                    <div class="collection-right-text">
+                        <span>welcome</span>
+                        <br>
+                        <span>erling haaland</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="our-champions mt-4">
+    <div class="container">
+        <div class="our-champions-head">
+            <h4>OUR</h4>
+            <h4>CHAMPIONS</h4>
+        </div>
+        <div class="our-champions-button">
+            <button class="btn" routerLink="/filter/2">Shop by player</button>
+        </div>
+        <div class="mt-5 carousel-relative">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide>
+                    <div class="player">
+                        <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                                class="card-img"></a>
+                        <div class="player-text">
+                            <p>KEVIN DE BRUYNE</p>
+                            <P>Midfielder</P>
+                        </div>
+                        <div class="player-tile__number position-absolute">
+                            <p>17</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="player">
+                        <a href=""><img src="https://www.mancity.com/meta/media/2ozp4m04/phil-foden.png" alt=""
+                                class="card-img"></a>
+                        <div class="player-text">
+                            <p>PHIL FODEN</p>
+                            <P>Midfielder</P>
+                        </div>
+                        <div class="player-tile__number position-absolute">
+                            <p>47</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="player">
+                        <a href=""><img src="https://www.mancity.com/meta/media/qdlbnbg2/jack-grealish.png" alt=""
+                                class="card-img"></a>
+                        <div class="player-text">
+                            <p>JACK GREALISH</p>
+                            <P>Midfielder</P>
+                        </div>
+                        <div class="player-tile__number position-absolute">
+                            <p>10</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="player">
+                        <a href=""><img src="https://www.mancity.com/meta/media/xg0cuprp/ederson.png" alt=""
+                                class="card-img"></a>
+                        <div class="player-text">
+                            <p>EDERSON</p>
+                            <P>Goalkeeper</P>
+                        </div>
+                        <div class="player-tile__number position-absolute">
+                            <p>31</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="player">
+                        <a href=""><img src="https://www.mancity.com/meta/media/cnek0jbq/ilkay-gundogan.png" alt=""
+                                class="card-img"></a>
+                        <div class="player-text">
+                            <p>IKALY GUNDUGAN</p>
+                            <P>Midfielder</P>
+                        </div>
+                        <div class="player-tile__number position-absolute">
+                            <p>8</p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="player">
+                        <a href=""><img src="https://www.mancity.com/meta/media/3mjhpfve/riyad-mahrez.png" alt=""
+                                class="card-img"></a>
+                        <div class="player-text">
+                            <p>RIYAD MAHREZ</p>
+                            <P>Forward</P>
+                        </div>
+                        <div class="player-tile__number position-absolute">
+                            <p>20</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+
+        </div>
+    </div>
+</div>
+<div class="complete mt-4">
+    <div class="container">
+        <h4 class="mb-2">COMPLETE THE LOOK</h4>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="collection-left">
+                    <a href="">
+                        <img src="https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-MAN-Library/default/dw3a8ed80e/images/2021%20Campaigns/retro/Content_Square_Tile-RetroKits_1%20(1).jpg?sw=950"
+                            alt="" class="card-img">
+                    </a>
+                    <div class="collection-left-text">
+                        <span>BE PART OF</span>
+                        <br>
+                        <span>OUR HISTORY</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="collection-right">
+                    <a href="">
+                        <img src="https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-MAN-Library/default/dw294512f6/images/2022_campaigns/champions21-22/HOMEPAGE_Content_Square_Tile_Champions_21-22_v3-2.jpg?sw=950"
+                            alt="" class="card-img">
+                    </a>
+                    <div class="collection-right-text">
+                        <span>21/22 champions</span>
+                        <br>
+                        <span>RANGE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="MC-Woman mt-4">
+    <div class="container">
+        <h4 class="mb-2">MANCHESTER CITY WOMEN'S TEAM</h4>
+        <div class="img-MC-Woman">
+            <a href="">
+                <img src="https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-MAN-Library/default/dw667c0c17/images/2022_campaigns/hp_homekit-22-23/block_mid_homekit_v1.jpg?sw=1900"
+                    alt="" class="card-img">
+            </a>
+            <div class="MC-Woman-text">
+                <span>SHOP</span>
+                <br>
+                <span>KIT</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="discover mt-4 mb-5">
+    <div class="container">
+        <h4 class="mb-2">DISCOVER MORE</h4>
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="collection-left">
+                    <a href="">
+                        <img src="https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-MAN-Library/default/dwed5a852d/images/2022_campaigns/hp_homekit-22-23/mid_square_left_prematch_v3.jpg?sw=950"
+                            alt="" class="card-img">
+                    </a>
+                    <div class="collection-left-text">
+                        <span>PRE-MATCH</span>
+                        <br>
+                        <span>RANGE</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="collection-right">
+                    <a href="">
+                        <img src="https://shop.mancity.com/dw/image/v2/BDWJ_PRD/on/demandware.static/-/Sites-MAN-Library/default/dwe877cbc0/images/2022_campaigns/hp_homekit-22-23/mid_square_right_ftbl_v3.jpg?sw=950"
+                            alt="" class="card-img">
+                    </a>
+                    <div class="collection-right-text">
+                        <span>FANWEAR</span>
+                        <br>
+                        <span>COLLECTION</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+<!-- <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide>
+        <div class="player">
+            <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                    class="card-img"></a>
+            <div class="player-text">
+                <p>KEVIN DE BRUYNE</p>
+                <P>Midfielder</P>
+            </div>
+            <div class="player-tile__number position-absolute">
+                <p>17</p>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="player">
+            <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                    class="card-img"></a>
+            <div class="player-text">
+                <p>KEVIN DE BRUYNE</p>
+                <P>Midfielder</P>
+            </div>
+            <div class="player-tile__number position-absolute">
+                <p>17</p>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="player">
+            <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                    class="card-img"></a>
+            <div class="player-text">
+                <p>KEVIN DE BRUYNE</p>
+                <P>Midfielder</P>
+            </div>
+            <div class="player-tile__number position-absolute">
+                <p>17</p>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="player">
+            <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                    class="card-img"></a>
+            <div class="player-text">
+                <p>KEVIN DE BRUYNE</p>
+                <P>Midfielder</P>
+            </div>
+            <div class="player-tile__number position-absolute">
+                <p>17</p>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="player">
+            <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                    class="card-img"></a>
+            <div class="player-text">
+                <p>KEVIN DE BRUYNE</p>
+                <P>Midfielder</P>
+            </div>
+            <div class="player-tile__number position-absolute">
+                <p>17</p>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="player">
+            <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                    class="card-img"></a>
+            <div class="player-text">
+                <p>KEVIN DE BRUYNE</p>
+                <P>Midfielder</P>
+            </div>
+            <div class="player-tile__number position-absolute">
+                <p>17</p>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="player">
+            <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                    class="card-img"></a>
+            <div class="player-text">
+                <p>KEVIN DE BRUYNE</p>
+                <P>Midfielder</P>
+            </div>
+            <div class="player-tile__number position-absolute">
+                <p>17</p>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="player">
+            <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                    class="card-img"></a>
+            <div class="player-text">
+                <p>KEVIN DE BRUYNE</p>
+                <P>Midfielder</P>
+            </div>
+            <div class="player-tile__number position-absolute">
+                <p>17</p>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="player">
+            <a href=""><img src="https://www.mancity.com/meta/media/4jeo4c53/kevin-de-bruyne.png" alt=""
+                    class="card-img"></a>
+            <div class="player-text">
+                <p>KEVIN DE BRUYNE</p>
+                <P>Midfielder</P>
+            </div>
+            <div class="player-tile__number position-absolute">
+                <p>17</p>
+            </div>
+        </div>
+    </ng-template>
+</owl-carousel-o> -->

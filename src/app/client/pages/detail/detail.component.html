@@ -1,0 +1,79 @@
+<app-header></app-header>
+<div class="detail_pro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 img_pro">
+                <owl-carousel-o [options]="customOptions1">
+                    <ng-template carouselSlide>
+                        <img src="{{product.img}}" alt="">
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <img src="{{product.img2}}" alt="">
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <img src="{{product.img3}}" alt="">
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+            <div class="col-lg-5 detail_text">
+                <div class="name_pro">
+                    <p>{{product.name}}</p>
+                    <p>£ {{product.price}},00</p>
+                </div>
+
+                <div class="select_size">
+                    <p>SELECT SIZE</p>
+                    <div class="size mt-5">
+                        <span class="swatch-scaler">XS</span>
+                        <span class="swatch-scaler">S</span>
+                        <span class="swatch-scaler">M</span>
+                        <span class="swatch-scaler">L</span>
+                        <span class="swatch-scaler">XL</span>
+                        <span class="swatch-scaler">2XL</span>
+                        <span class="swatch-scaler">3XL</span>
+                    </div>
+                </div>
+                <div class="row buy mb-5 mt-5">
+                    <div class="input ml-3">
+                        <button (click)="mark('-')" class="btn-fake left_ip" id="tru">-</button>
+                        <input type="number" value="1" id="quantily">
+                        <button (click)="mark('+')" class="btn-fake right_ip" id="cong">+</button>
+                    </div>
+                    <div id="rateYo" class="star ml-5"></div>
+                </div>
+                <div class="add_cart mt-3">
+                    <a (click)="addCart()">
+                        <p>ADD TO BAG</p>
+                    </a>
+                </div>
+                <div class="alert alert-primary" role="alert">
+                    <strong>Due to high demand we expect delivery of printed shirts to take up to 3 additional business
+                        days.</strong>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="more-product">
+    <div class="container">
+        <h2>You might also like</h2>
+        <div class="product-like">
+            <owl-carousel-o [options]="customOptions2">
+                <ng-template carouselSlide *ngFor="let item of list_pro">
+                    <div class="card">
+                        <a (click)="detail(item.id)"><img class="card-img-top item" src="{{item.img}}"
+                                alt="Title"></a>
+                        <div class="card-body">
+                            <a routerLink="/detail/{{item.id}}" style="text-decoration: none; color:#00285e; font-weight: 600;">
+                                <p class="card-title">{{item.name}}</p>
+                            </a>
+                            <p class="card-text">£ {{item.price}},00</p>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
